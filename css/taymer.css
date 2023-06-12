@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.stopwatch {
+  width: 90%;
+  max-width: 600px;
+  backdrop-filter: blur(1px);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.stopwatch h1 {
+  padding: 25px 0;
+  font-size: 34px;
+  font-weight: 300;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.buttons img {
+  width: 50px;
+  max-width: 0 20px;
+  cursor: pointer;
+}
+.buttons img:nth-child(2) {
+  width: 80px;
+}
+.nav {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.nav-left_right {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 25px 0 0 30px;
+}
+.nav-left a {
+    text-decoration: none;
+  font-size: 14px;
+  color: #ddd;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 30px 0 0;
+}
+
+/*start*/
+body {
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#phone {
+  background-color: #000;
+  background-image: url(../bcg-im.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 5px solid #000;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#screen {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#content {
+  color: #000;
+  font-size: 20px;
+}
+
+#buttons {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.button {
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.button:hover {
+  color: #000;
+  background-image: linear-gradient(to bottom right, #fb36f4, #0100ec);
+}
+.Back {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin: 50px 0 0 30px;
+    border: 2px solid #fff;
+    width: 100px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+.Back:hover {
+    color: #e4e4e4;
+    border: 2px solid #e4e4e4;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm</title>
+    <link rel="stylesheet" href="../css/alarm.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav">
+        <div class="nav-left_right">
+          <div class="nav-left">
+            <a href="../phone.html">Beeline Uz</a>
+            <img
+              class="clock"
+              src="../alarm/clock-svgrepo-com.svg"
+              alt="clocks"
+            />
+          </div>
+
+          <div class="nav-right">
+            <img
+              class="bluetooth"
+              src="../alarm/bluetooth-svgrepo-com.svg"
+              alt="bluetooth"
+            />
+            <img
+              class="antenna"
+              src="../alarm/antenna-bars-svgrepo-com.svg"
+              alt="antenna"
+            />
+            <img
+              class="wifi"
+              src="../alarm/wifi-1020-svgrepo-com.svg"
+              alt="wifi"
+            />
+            <img
+              class="battery"
+              src="../alarm/battery-svgrepo-com.svg"
+              alt="battery"
+            />
+          </div>
+        </div>
+      </div>
+      <img class="clock-img" src="../alarm/clock.svg" alt="clock" />
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Set Alarm</button>
+    </div>
+    <script src="../js/alarm.js"></script>
+  </body>
+</html>

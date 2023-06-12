@@ -1,0 +1,127 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.nav-left_right {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.nav-left a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ddd;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*start*/
+body,
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  padding: 0 10px;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+}
+.wrapper {
+  border: 5px solid #000;
+  width: 300px;
+  height: 600px;
+  padding: 30px 30px 38px;
+  background-image: url(../bcg-im.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.wrapper .clock-img {
+  max-width: 103px;
+  animation: move 0.5s infinite alternate;
+}
+.wrapper:hover .clock-img {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@keyframes move {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.wrapper h1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.wrapper .content {
+  width: 100%;
+}
+.content.disable {
+  cursor: no-drop;
+}
+.content .column {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 5px 0;
+}
+.content.disable .column {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column select {
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+.wrapper button {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+}
+
+.wrapper button:hover {
+  color: #000;
+  background-image: linear-gradient(to bottom right, #fb36f4, #0100ec);
+}
+
+option {
+  background-color: #000;
+  color: #fff;
+}

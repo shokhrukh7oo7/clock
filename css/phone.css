@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.nav-left_right {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 25px 0 0 30px;
+}
+.nav-left h4 {
+  font-size: 14px;
+  color: #ddd;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 30px 0 0;
+}
+
+/*start*/
+body {
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#phone {
+  background-color: #000;
+  background-image: url(../bcg-im.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 5px solid #000;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#screen {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#content {
+  color: #000;
+  font-size: 20px;
+}
+
+#buttons {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.button {
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.button:hover {
+  color: #000;
+  background-image: linear-gradient(to bottom right, #fb36f4, #0100ec);
+}
+/*phone clock*/
+.text_color {
+  background-color: #fdee22;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.time_wrapper {
+  position: relative;
+}
+
+#time {
+  text-shadow: 0 0 40px #3bac2c;
+  font-size: 50px;
+  margin-left: 30px;
+}
+#sec {
+  position: absolute;
+  bottom: 14px;
+  left: 165px;
+  font-size: 20px;
+  font-weight: 400;
+}
+#mid {
+  position: absolute;
+  top: 32px;
+  right: 65px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.day_wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 15px;
+
+}
+.day_wrapper span {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.8;
+  font-weight: 700;
+}
+#showDate {
+  position: relative;
+  left: 30px;
+  font-size: 2rem;
+}

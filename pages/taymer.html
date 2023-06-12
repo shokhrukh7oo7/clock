@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taymer</title>
+    <link rel="stylesheet" href="../css/taymer.css" />
+  </head>
+  <body>
+    <div id="phone">
+      <div class="nav">
+          <div class="nav-left_right">
+            <div class="nav-left">
+              <a href="../phone.html">Beeline Uz</a>
+              <img class="clock" src="../alarm/clock-svgrepo-com.svg" alt="clocks">
+            </div>
+  
+            <div class="nav-right">
+              <img class="bluetooth" src="../alarm/bluetooth-svgrepo-com.svg" alt="bluetooth">
+              <img class="antenna" src="../alarm/antenna-bars-svgrepo-com.svg" alt="antenna">
+              <img class="wifi" src="../alarm/wifi-1020-svgrepo-com.svg" alt="wifi">
+              <img class="battery" src="../alarm/battery-svgrepo-com.svg" alt="battery">
+            </div>
+          </div>
+        </div>
+        <div class="stopwatch">
+          <h1 id="displayTime">00:00:00</h1>
+          <div class="buttons">
+            <img src="../alarm/stop.png" onclick="watchStop()" alt="stop" />
+            <img src="../alarm/start.png" onclick="watchStart()" alt="start" />
+            <img src="../alarm/reset.png" onclick="watchReset()" alt="reset" />
+          </div>
+        </div>
+
+        <a href="../phone.html" class="Back"> Back</a>
+      </div>
+
+
+
+    <script src="../js/taymer.js"></script>
+  </body>
+</html>
